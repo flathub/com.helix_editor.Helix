@@ -95,14 +95,8 @@ modules:
     sources:
       - type: dir
         path: wrapper
-      - type: file
-        path: helix-first-run.txt
-      - type: file
-        path: helix-sdk-update.txt
     config-opts:
       - -Deditor_binary=/app/bin/hx
       - -Dprogram_name=hx-wrapper
       - -Deditor_title=Helix
-      - -Dfirst_run_template=helix-first-run.txt
-      - -Dsdk_update_template=helix-sdk-update.txt
       - -Dflagfile_prefix=flatpak-helix
