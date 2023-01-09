@@ -73,7 +73,7 @@ modules:
       - install -D helix.appdata.xml /app/share/metainfo/com.helix_editor.Helix.metainfo.xml
     post-install:
       # Set desktop
-      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/Helix.desktop
+      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/com.helix_editor.Helix.desktop
     sources:
       - type: archive
         url: https://github.com/helix-editor/helix/releases/download/22.12/helix-22.12-x86_64-linux.tar.xz
