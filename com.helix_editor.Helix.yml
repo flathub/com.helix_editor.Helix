@@ -4,7 +4,7 @@ runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 
-command: hx
+command: hx-wrapper
 
 finish-args:
   - --env=HELIX_RUNTIME=/app/lib/helix/runtime
@@ -71,6 +71,8 @@ modules:
       - install -D helix.png /app/share/icons/hicolor/256x256/apps/com.helix_editor.Helix.png
 
       - install -D helix.appdata.xml /app/share/metainfo/com.helix_editor.Helix.metainfo.xml
+    post-install:
+      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/com.helix_editor.Helix.desktop
     sources:
       - type: archive
         url: https://github.com/helix-editor/helix/releases/download/22.12/helix-22.12-x86_64-linux.tar.xz
@@ -87,3 +89,13 @@ modules:
       - type: file
         path: helix.appdata.xml
 
+  - name: wrapper
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: wrapper
+    config-opts:
+      - -Deditor_binary=/app/bin/hx
+      - -Dprogram_name=hx-wrapper
+      - -Deditor_title=Helix
+      - -Dflagfile_prefix=flatpak-helix
