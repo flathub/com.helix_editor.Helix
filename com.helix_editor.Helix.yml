@@ -68,9 +68,9 @@ modules:
       - cp -r runtime /app/lib/helix/runtime
 
       - install -D Helix.desktop /app/share/applications/com.helix_editor.Helix.desktop
-      - install -D helix.png /app/share/icons/hicolor/256x256/apps/com.helix_editor.Helix.png
+      - install -D Helix.png /app/share/icons/hicolor/256x256/apps/com.helix_editor.Helix.png
+      - install -D Helix.appdata.xml /app/share/metainfo/com.helix_editor.Helix.metainfo.xml
 
-      - install -D helix.appdata.xml /app/share/metainfo/com.helix_editor.Helix.metainfo.xml
     sources:
       - type: archive
         url: https://github.com/helix-editor/helix/releases/download/22.12/helix-22.12-x86_64-linux.tar.xz
@@ -81,9 +81,9 @@ modules:
         sha256: b5baa95b46f9608f4a695d180c33bc95ff7dab1d2dad00d905f37211be6d6a8f
         only-arches: [aarch64]
       - type: file
-        path: helix.png
+        path: Helix.png
       - type: file
         path: Helix.desktop
       - type: file
-        path: helix.appdata.xml
+        path: Helix.appdata.xml
 
