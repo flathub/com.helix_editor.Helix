@@ -4,7 +4,7 @@ runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 
-command: hx
+command: hx-wrapper
 
 finish-args:
   - --env=HELIX_RUNTIME=/app/lib/helix/runtime
@@ -16,6 +16,8 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --share=ipc
+  # Some language servers might need to access network
+  - --share=network
   # Ability to flatpak-spawn language servers on host
   - --talk-name=org.freedesktop.Flatpak
 
@@ -71,6 +73,8 @@ modules:
       - install -D Helix.png /app/share/icons/hicolor/256x256/apps/com.helix_editor.Helix.png
       - install -D Helix.appdata.xml /app/share/metainfo/com.helix_editor.Helix.metainfo.xml
 
+    post-install:
+      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/com.helix_editor.Helix.desktop
     sources:
       - type: archive
         url: https://github.com/helix-editor/helix/releases/download/22.12/helix-22.12-x86_64-linux.tar.xz
@@ -87,3 +91,16 @@ modules:
       - type: file
         path: Helix.appdata.xml
 
+  - name: wrapper
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: wrapper
+      - type: file
+        path: helix_first_run.txt
+    config-opts:
+      - -Deditor_binary=/app/bin/hx
+      - -Dprogram_name=hx-wrapper
+      - -Deditor_title=Helix
+      - -Dflagfile_prefix=flatpak-helix
+      - -Dfirst_run_template=./helix_first_run.txt 
