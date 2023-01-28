@@ -1,0 +1,64 @@
+You are running flatpak version of Helix.
+You can open issues related to this flatpak at https://github.com/flathub/@FLATPAK_ID@/issues
+
+This version is running inside a container and is therefore not able
+to access SDKs on your host system!
+
+To execute commands on the host system, you can use:
+
+  $ flatpak-spawn --host <COMMAND>
+
+If you want to use language server installed on your host system,
+you will have to add and entry into your languages.toml file.
+For example:
+
+  [[language]]
+  name = "rust"
+  language-server = { command = "flatpak-spawn", args = ["--host", "rust-analyzer"] }
+ 
+
+
+Alternatively, you can install flatpak SDK extensions to get support for languages.
+
+Vy default you have access to standard development environment (gcc, python, etc.)
+provided by org.freedesktop.Sdk.
+
+To get support for additional languages (including language servers),
+you have to install SDK extensions, e.g.
+
+  $ flatpak install flathub org.freedesktop.Sdk.Extension.rust-stable
+  $ flatpak install flathub org.freedesktop.Sdk.Extension.llvm15
+
+To see what's available:
+
+  $ flatpak run --command=sh @FLATPAK_ID@
+  $ ls /usr/bin # Binaries in shared runtime
+  $ ls /usr/lib/sdk # Installed SDK extensions
+  $ ls /usr/lib/sdk/<EXTENSION> # Things provided by the extension
+
+After installing you will need to enable selected extensions,
+for that set FLATPAK_ENABLE_SDK_EXT environment variable to a comma-separated
+list of extension names (name is ID portion after the last dot):
+
+  $ FLATPAK_ENABLE_SDK_EXT=rust-stable,llvm15 flatpak run @FLATPAK_ID@
+
+This will add to $PATH things like compilers, language servers, and other tools.
+
+To make this persistent, set the variable via flatpak override:
+
+  $ flatpak override --user @FLATPAK_ID@ --env=FLATPAK_ENABLE_SDK_EXT="rust-stable,llvm15"
+
+
+After that, you can run Helix with --health option to see which language servers have been detected.
+
+  $ FLATPAK_ENABLE_SDK_EXT=rust-stable,llvm15 flatpak run @FLATPAK_ID@ --health
+
+Or get information about certain language:
+
+  $ FLATPAK_ENABLE_SDK_EXT=rust-stable,llvm15 flatpak run @FLATPAK_ID@ --health rust
+
+
+To find other SDK extensions you can use
+
+  $ flatpak search <TEXT>
+

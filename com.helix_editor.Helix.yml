@@ -94,8 +94,11 @@ modules:
     sources:
       - type: dir
         path: wrapper
+      - type: file
+        path: helix_first_run.txt
     config-opts:
       - -Deditor_binary=/app/bin/hx
       - -Dprogram_name=hx-wrapper
       - -Deditor_title=Helix
       - -Dflagfile_prefix=flatpak-helix
+      - -Dfirst_run_template=./helix_first_run.txt 
