@@ -37,6 +37,7 @@ modules:
           url-template: https://github.com/bugaevc/wl-clipboard/archive/v$version.tar.gz
     cleanup:
       - /share/man
+      - /share/bash-completion
 
   - name: xclip
     sources:
