@@ -21,6 +21,8 @@ finish-args:
   - --share=network
   # Ability to flatpak-spawn language servers on host
   - --talk-name=org.freedesktop.Flatpak
+  # Supress output from ide-flatpak-wrapper
+  - --env=FLATPAK_IDE_LOG_LEVEL=0
 
 modules:
   - name: wl-clipboard
