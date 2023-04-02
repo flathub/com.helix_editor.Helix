@@ -8,6 +8,10 @@ sdk-extensions:
 
 command: hx-wrapper
 
+rename-desktop-file: Helix.desktop
+rename-icon: helix
+rename-appdata-file: Helix.appdata.xml 
+
 finish-args:
   # Filesystem acess
   - --filesystem=host
@@ -76,11 +80,11 @@ modules:
       - cp -r ./runtime/queries /app/share/helix/runtime/queries
       - cp ./runtime/tutor /app/share/helix/runtime/tutor
 
-      - install -D ./contrib/Helix.desktop /app/share/applications/com.helix_editor.Helix.desktop
-      - install -D ./contrib/helix.png /app/share/icons/hicolor/256x256/apps/com.helix_editor.Helix.png
-      - install -D ./contrib/Helix.appdata.xml /app/share/metainfo/com.helix_editor.Helix.metainfo.xml
+      - install -D ./contrib/Helix.desktop -t /app/share/applications
+      - install -D ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
+      - install -D ./contrib/Helix.appdata.xml -t /app/share/metainfo
 
-      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/com.helix_editor.Helix.desktop
+      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/Helix.desktop
     sources:
       - type: archive
         url: 'https://github.com/helix-editor/helix/archive/refs/tags/23.03.tar.gz'
