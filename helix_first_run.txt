@@ -9,7 +9,7 @@ To execute commands on the host system, you can use:
   $ flatpak-spawn --host <COMMAND>
 
 If you want to use language server installed on your host system,
-you will have to add and entry into your languages.toml file.
+you will have to add an entry into your languages.toml file.
 For example:
 
   [[language]]
@@ -52,7 +52,7 @@ After that, you can run Helix with --health option to see which language servers
 
   $ FLATPAK_ENABLE_SDK_EXT=rust-stable,llvm15 flatpak run @FLATPAK_ID@ --health
 
-Or get information about certain language:
+Or get information about specific language:
 
   $ FLATPAK_ENABLE_SDK_EXT=rust-stable,llvm15 flatpak run @FLATPAK_ID@ --health rust
 

@@ -3,11 +3,16 @@ app-id: com.helix_editor.Helix
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
 
 command: hx-wrapper
 
+rename-desktop-file: Helix.desktop
+rename-icon: helix
+rename-appdata-file: Helix.appdata.xml 
+
 finish-args:
-  - --env=HELIX_RUNTIME=/app/lib/helix/runtime
   # Filesystem acess
   - --filesystem=host
   - --filesystem=/tmp
@@ -16,10 +21,12 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --share=ipc
-  # Some language servers might need to access network
+  # Ability to fetch grammars. Some language servers might also need network
   - --share=network
   # Ability to flatpak-spawn language servers on host
   - --talk-name=org.freedesktop.Flatpak
+  # Supress output from ide-flatpak-wrapper
+  - --env=FLATPAK_IDE_LOGLEVEL=0
 
 modules:
   - name: wl-clipboard
@@ -37,6 +44,7 @@ modules:
           url-template: https://github.com/bugaevc/wl-clipboard/archive/v$version.tar.gz
     cleanup:
       - /share/man
+      - /share/bash-completion
 
   - name: xclip
     sources:
@@ -63,33 +71,29 @@ modules:
   - name: hx
     buildsystem: simple
     build-commands:
-      - install -D hx /app/bin/hx
+      - cargo --offline fetch --manifest-path Cargo.toml
+      - cargo --offline build --profile=opt
+      - install -D ./target/opt/hx -t /app/share/helix
 
-      - mkdir -p /app/lib/helix
-      - rm -rf /app/lib/helix/runtime
-      - cp -r runtime /app/lib/helix/runtime
+      - mkdir -p /app/share/helix/runtime
+      - cp -r ./runtime/themes /app/share/helix/runtime/themes
+      - cp -r ./runtime/queries /app/share/helix/runtime/queries
+      - cp ./runtime/tutor /app/share/helix/runtime/tutor
 
-      - install -D Helix.desktop /app/share/applications/com.helix_editor.Helix.desktop
-      - install -D Helix.png /app/share/icons/hicolor/256x256/apps/com.helix_editor.Helix.png
-      - install -D Helix.appdata.xml /app/share/metainfo/com.helix_editor.Helix.metainfo.xml
+      - install -D ./contrib/Helix.desktop -t /app/share/applications
+      - install -D ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
+      - install -D ./contrib/Helix.appdata.xml -t /app/share/metainfo
 
-    post-install:
-      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/com.helix_editor.Helix.desktop
+      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/Helix.desktop
     sources:
       - type: archive
-        url: https://github.com/helix-editor/helix/releases/download/22.12/helix-22.12-x86_64-linux.tar.xz
-        sha256: 54892869762439a57daf463ee29c5c826fe6a2b348e6291094ca20cdaef1c2f0
-        only-arches: [x86_64]
-      - type: archive
-        url: https://github.com/helix-editor/helix/releases/download/22.12/helix-22.12-aarch64-linux.tar.xz
-        sha256: b5baa95b46f9608f4a695d180c33bc95ff7dab1d2dad00d905f37211be6d6a8f
-        only-arches: [aarch64]
-      - type: file
-        path: Helix.png
-      - type: file
-        path: Helix.desktop
-      - type: file
-        path: Helix.appdata.xml
+        url: 'https://github.com/helix-editor/helix/archive/refs/tags/23.03.tar.gz'
+        sha256: '5f9df93c8d98fd4bd13329c0aaf978e74887a0f6022d699ff6161dcee78e8655'
+      - 'cargo-sources.json'
+    build-options:
+      append-path: /usr/lib/sdk/rust-stable/bin
+      env:
+        CARGO_HOME: /run/build/hx/cargo
 
   - name: wrapper
     buildsystem: meson
@@ -99,8 +103,8 @@ modules:
       - type: file
         path: helix_first_run.txt
     config-opts:
-      - -Deditor_binary=/app/bin/hx
+      - -Deditor_binary=/app/share/helix/hx
       - -Dprogram_name=hx-wrapper
       - -Deditor_title=Helix
       - -Dflagfile_prefix=flatpak-helix
-      - -Dfirst_run_template=./helix_first_run.txt 
+      - -Dfirst_run_template=./helix_first_run.txt
