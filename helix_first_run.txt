@@ -40,12 +40,11 @@ After installing you will need to enable selected extensions,
 for that set FLATPAK_ENABLE_SDK_EXT environment variable to a comma-separated
 list of extension names (name is ID portion after the last dot).
 Also, to use all installed extensions, you can set it to "*", but that will cause troubles
-if you have multiple versions of the same SDK extension installed 
+if you have multiple versions of the same extension installed 
 
   $ FLATPAK_ENABLE_SDK_EXT=rust-stable,llvm15 flatpak run @FLATPAK_ID@
 
 This will add to $PATH things like compilers, language servers, and other tools.
-
 
 
 After that, you can run Helix with --health option to see which language servers have been detected.
