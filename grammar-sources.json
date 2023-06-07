@@ -1,0 +1,901 @@
+[
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-rust/archive/0431a2c60828731f27491ee9fdefe25e250ce9c9.tar.gz",
+        "sha256": "006c00e984836ab4b8e6ec3c593b937a0cd9d155f649ad515e1a87cb6ae9f2b8",
+        "dest": "grammars/rust"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/FuelLabs/tree-sitter-sway/archive/e491a005ee1d310f4c138bf215afd44cfebf959c.tar.gz",
+        "sha256": "038f0997954eed8158404b7759e3ecee4262fb312f9f1a812a3eb404ed19269e",
+        "dest": "grammars/sway"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ikatyang/tree-sitter-toml/archive/7cff70bbcbbc62001b465603ca1ea88edd668704.tar.gz",
+        "sha256": "93f36067123041867dabfd649c3588186c1643dfb1f69ad1fea3377c5b693294",
+        "dest": "grammars/toml"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Beaglefoot/tree-sitter-awk/archive/a799bc5da7c2a84bc9a06ba5f3540cf1191e4ee3.tar.gz",
+        "sha256": "6744809bcc3fcabcd66a1d05ba5842c04a7eb2b8ed0ccf459e329c245ba6757b",
+        "dest": "grammars/awk"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/yusdacra/tree-sitter-protobuf/archive/19c211a01434d9f03efff99f85e19f967591b175.tar.gz",
+        "sha256": "c2fd2810873a2d189b3ea4b40facea6443b0b1f4b5d3e80aedc46c6bec3c2953",
+        "dest": "grammars/protobuf"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/elixir-lang/tree-sitter-elixir/archive/b20eaa75565243c50be5e35e253d8beb58f45d56.tar.gz",
+        "sha256": "60d40aac41a64c9fe338336c27aaddc6747ac7bd1da941ac1187464bfe475939",
+        "dest": "grammars/elixir"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ram02z/tree-sitter-fish/archive/84436cf24c2b3176bfbb220922a0fdbd0141e406.tar.gz",
+        "sha256": "b76a38020cd4a2af27fc5891b4a257981e039f6e8e88a9a4652edfb68b79776f",
+        "dest": "grammars/fish"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-json/archive/73076754005a460947cafe8e03a8cf5fa4fa2938.tar.gz",
+        "sha256": "8915d65c0cfe9e601de7c1d9df9fe90a750bf7986a08293a901b136c6dc17dde",
+        "dest": "grammars/json"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-c/archive/7175a6dd5fc1cee660dce6fe23f6043d75af424a.tar.gz",
+        "sha256": "617ab936681b75d45fb5dc26a58888552167f174d996b7e274fb4af090b62e5b",
+        "dest": "grammars/c"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-cpp/archive/2d2c4aee8672af4c7c8edff68e7dd4c07e88d2b1.tar.gz",
+        "sha256": "3e1a94c5d8d50d8c40c488506e90151b08b3c525249f26263376c9c10051fdf4",
+        "dest": "grammars/cpp"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-c-sharp/archive/5b60f99545fea00a33bbfae5be956f684c4c69e2.tar.gz",
+        "sha256": "e3eb979624d6133edce8d7dd634bfb2a09a5afdea8d8922c088c8709fabdda1e",
+        "dest": "grammars/c-sharp"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-go/archive/64457ea6b73ef5422ed1687178d4545c3e91334a.tar.gz",
+        "sha256": "039d827c7af2659a3f2d76511602c50c2528e5648f11a13da98c0ba253986093",
+        "dest": "grammars/go"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/camdencheek/tree-sitter-go-mod/archive/e8f51f8e4363a3d9a427e8f63f4c1bbc5ef5d8d0.tar.gz",
+        "sha256": "5e0fb1303f52379bd59da781dceb07cd10fb4a0f37acd5f9fa933bf8563d4597",
+        "dest": "grammars/gomod"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/dannylongeuay/tree-sitter-go-template/archive/395a33e08e69f4155156f0b90138a6c86764c979.tar.gz",
+        "sha256": "39394ff1d78c8bb89a1933fd9ab70da08a091a5389277d32c2de04a27c016e4d",
+        "dest": "grammars/gotmpl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/omertuc/tree-sitter-go-work/archive/6dd9dd79fb51e9f2abc829d5e97b15015b6a8ae2.tar.gz",
+        "sha256": "341627f8204402d3a45382700ab2d720396817f29b799e0a3cacf3dbc7933606",
+        "dest": "grammars/gowork"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-javascript/archive/4a95461c4761c624f2263725aca79eeaefd36cad.tar.gz",
+        "sha256": "f42afcade087fce02f1437eeafa33136c66f073c9fd31fcc4ed7c75c1371137b",
+        "dest": "grammars/javascript"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-typescript/archive/6aac031ad88dd6317f02ac0bb27d099a553a7d8c.tar.gz",
+        "sha256": "cafcc8733e45529b4f5ebc7f6e200a574d96ca86a788dd1099a43a42bd707e22",
+        "dest": "grammars/typescript"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-typescript/archive/6aac031ad88dd6317f02ac0bb27d099a553a7d8c.tar.gz",
+        "sha256": "cafcc8733e45529b4f5ebc7f6e200a574d96ca86a788dd1099a43a42bd707e22",
+        "dest": "grammars/tsx"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-css/archive/769203d0f9abe1a9a691ac2b9fe4bb4397a73c51.tar.gz",
+        "sha256": "ca9610e9a2afecc94731d57e82fa94ebf1bcbd260d9271deec9b27190d68d777",
+        "dest": "grammars/css"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/serenadeai/tree-sitter-scss/archive/c478c6868648eff49eb04a4df90d703dc45b312a.tar.gz",
+        "sha256": "d2178b5ba07e1fea9be0dd2d2c4c083805cc19678362e619144505e14f61dfa2",
+        "dest": "grammars/scss"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-html/archive/29f53d8f4f2335e61bf6418ab8958dac3282077a.tar.gz",
+        "sha256": "9f7a6285c10b44cf6794122516247e2368ba6a0167b3c44989b16c75f0d221c0",
+        "dest": "grammars/html"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-python/archive/de221eccf9a221f5b85474a553474a69b4b5784d.tar.gz",
+        "sha256": "76cf813ef8049df18963e045494780c71003d2b0538ecc641a96dacb24d65f77",
+        "dest": "grammars/python"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/nickel-lang/tree-sitter-nickel/archive/3a794388773f2424a97b2186828aa3fac4c66ce6.tar.gz",
+        "sha256": "b83b9d00ed7d870f9969cb8a2ba8aea06c126c200c89d9bab612620ed7a7b7b5",
+        "dest": "grammars/nickel"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/nix-community/tree-sitter-nix/archive/1b69cf1fa92366eefbe6863c184e5d2ece5f187d.tar.gz",
+        "sha256": "4a27550ee164cd01cdc983e9c659ba9c84918db92f6eaa3db0f6c338e446ce11",
+        "dest": "grammars/nix"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-ruby/archive/206c7077164372c596ffa8eaadb9435c28941364.tar.gz",
+        "sha256": "782593d1a868ea51ea546979760fc61c1f4f0580ba85063c1c25b364a1aebdb0",
+        "dest": "grammars/ruby"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-bash/archive/275effdfc0edce774acf7d481f9ea195c6c403cd.tar.gz",
+        "sha256": "1e0c47abb10f6f8e62be571855fc960d247960a9c502edcd1c6cce6a76530d62",
+        "dest": "grammars/bash"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-php/archive/f860e598194f4a71747f91789bf536b393ad4a56.tar.gz",
+        "sha256": "10dd9365746b3d3e3aaa8c8d5aba62cf49ffdbc61c20b0388196a53a4b3b3f38",
+        "dest": "grammars/php"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/gbprod/tree-sitter-twig/archive/807b293fec3fead64f54c64fdf6fb05516c032b9.tar.gz",
+        "sha256": "a550dbc960d5504f046d7a8fa403ee42815f205a3b87fc9aa8e3c697794fc02a",
+        "dest": "grammars/twig"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/latex-lsp/tree-sitter-latex/archive/8c75e93cd08ccb7ce1ccab22c1fbd6360e3bcea6.tar.gz",
+        "sha256": "5c4606f958fa5668e30fffd139650640ffe1ad25841de951e6cd2cdad3a99030",
+        "dest": "grammars/latex"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/latex-lsp/tree-sitter-bibtex/archive/ccfd77db0ed799b6c22c214fe9d2937f47bc8b34.tar.gz",
+        "sha256": "e97485dcd1fb0942cecb0ada8875026e45895052ddb46b31996d84ad12b639e9",
+        "dest": "grammars/bibtex"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Julian/tree-sitter-lean/archive/d98426109258b266e1e92358c5f11716d2e8f638.tar.gz",
+        "sha256": "616cc21ce819fe5d5f226dc1b9db9250b75b14932f122991c694cb0f8c4ef291",
+        "dest": "grammars/lean"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-julia/archive/8fb38abff74652c4faddbf04d2d5bbbc6b4bae25.tar.gz",
+        "sha256": "cb2139049a7a11cb1faf21a8604b06cbc9273ecf13ad71582a505e0a1d260b48",
+        "dest": "grammars/julia"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-java/archive/09d650def6cdf7f479f4b78f595e9ef5b58ce31e.tar.gz",
+        "sha256": "a45d6f460f32f7c6b59c3f33a315c98a35195696fbcf5aebd53580eb9d83647f",
+        "dest": "grammars/java"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/cbarrete/tree-sitter-ledger/archive/1f864fb2bf6a87fe1b48545cc6adc6d23090adf7.tar.gz",
+        "sha256": "ecdf8a40e831bd815fd1cbc6307083eb1c03bd0137f0df36bfb3572c3147d214",
+        "dest": "grammars/ledger"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/polarmutex/tree-sitter-beancount/archive/4cbd1f09cd07c1f1fabf867c2cf354f9da53cc4c.tar.gz",
+        "sha256": "ff4cb7100d5fc447765009f6f87faa4713df304448bc031d8e5e5d7be604f885",
+        "dest": "grammars/beancount"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-ocaml/archive/23d419ba45789c5a47d31448061557716b02750a.tar.gz",
+        "sha256": "c0ca5d5298d360ec804731b0e289cf283aa2194da6eaa1d6da60f8631bb2830b",
+        "dest": "grammars/ocaml"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-ocaml/archive/23d419ba45789c5a47d31448061557716b02750a.tar.gz",
+        "sha256": "c0ca5d5298d360ec804731b0e289cf283aa2194da6eaa1d6da60f8631bb2830b",
+        "dest": "grammars/ocaml-interface"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/MunifTanjim/tree-sitter-lua/archive/887dfd4e83c469300c279314ff1619b1d0b85b91.tar.gz",
+        "sha256": "10215ed8777be9230f1ea59a8bdfa85ef9651dfa214a3b629c51c385707e2e8b",
+        "dest": "grammars/lua"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Himujjal/tree-sitter-svelte/archive/349a5984513b4a4a9e143a6e746120c6ff6cf6ed.tar.gz",
+        "sha256": "055626767b50fdcb375295121876f65c2e148e433089d73750896f25d98863ef",
+        "dest": "grammars/svelte"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ikatyang/tree-sitter-vue/archive/91fe2754796cd8fba5f229505a23fa08f3546c06.tar.gz",
+        "sha256": "c71edcf9669d16a8f7b83ed25aa14305e2d966d4c57e9552016a1e11ebd50591",
+        "dest": "grammars/vue"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ikatyang/tree-sitter-yaml/archive/0e36bed171768908f331ff7dff9d956bae016efb.tar.gz",
+        "sha256": "46b6052ab86a14bb23406fbb5c56dc436798cb67b28a0e7fafe3183bc0c87788",
+        "dest": "grammars/yaml"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-haskell/archive/98fc7f59049aeb713ab9b72a8ff25dcaaef81087.tar.gz",
+        "sha256": "8df4a29e76eb9987c69ed5658bf958f19c1b0a1e6c7e4634e0ba103c987d2d5e",
+        "dest": "grammars/haskell"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/maxxnino/tree-sitter-zig/archive/8d3224c3bd0890fe08358886ebf54fca2ed448a6.tar.gz",
+        "sha256": "505a053d10c880f39b6a3b352b8e44a1ee7526f368ede18bb0d8ae5f88049de6",
+        "dest": "grammars/zig"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-tsq/archive/48b5e9f82ae0a4727201626f33a17f69f8e0ff86.tar.gz",
+        "sha256": "25052d36606b3cc8851db9da44c8b6d59a900f58361cb6cc33c5a1c7499166a7",
+        "dest": "grammars/tsq"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/uyha/tree-sitter-cmake/archive/6e51463ef3052dd3b328322c22172eda093727ad.tar.gz",
+        "sha256": "e89523736d1a9f63bf63660ef6635780d596a503282f8a8f8f3e0056bdce3b3c",
+        "dest": "grammars/cmake"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/alemuller/tree-sitter-make/archive/a4b9187417d6be349ee5fd4b6e77b4172c6827dd.tar.gz",
+        "sha256": "a1e078443fc36bfe562b40304c49e044d9230964dc82aba9e09b8cd7079ee3e0",
+        "dest": "grammars/make"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/theHamsta/tree-sitter-glsl/archive/88408ffc5e27abcffced7010fc77396ae3636d7e.tar.gz",
+        "sha256": "f1d5bf8eddd260bbce816a92c9283f7c1b02a87081050d84a0d84ea7d48f8472",
+        "dest": "grammars/glsl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ganezdragon/tree-sitter-perl/archive/0ac2c6da562c7a2c26ed7e8691d4a590f7e8b90a.tar.gz",
+        "sha256": "d6d00007f44d9cd621de66ccfbb97f28979c7f6bbb8ebc1a97c285f59c122fde",
+        "dest": "grammars/perl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/stsewd/tree-sitter-comment/archive/5dd3c62f1bbe378b220fe16b317b85247898639e.tar.gz",
+        "sha256": "403f5fa543728295649728e6253313c5b8e55ab7cbb78ef72ca7c24ee53fbd74",
+        "dest": "grammars/comment"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/szebniok/tree-sitter-wgsl/archive/272e89ef2aeac74178edb9db4a83c1ffef80a463.tar.gz",
+        "sha256": "9d820731b08c8c5ff4e9e1d81e8f78f02f93c3453f811651d4ac22a3d41a01c3",
+        "dest": "grammars/wgsl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/benwilliamgraham/tree-sitter-llvm/archive/3b213925b9c4f42c1acfe2e10bfbb438d9c6834d.tar.gz",
+        "sha256": "82ff1c1975664103270a9f77edb9d70c2694baf07ca914fda73da844a94e0fb9",
+        "dest": "grammars/llvm"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Flakebi/tree-sitter-llvm-mir/archive/06fabca19454b2dc00c1b211a7cb7ad0bc2585f1.tar.gz",
+        "sha256": "29cebbac66cc39c472790831471816e8eacc6889741e732461369221f98b9ae5",
+        "dest": "grammars/llvm-mir"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Flakebi/tree-sitter-tablegen/archive/568dd8a937347175fd58db83d4c4cdaeb6069bd2.tar.gz",
+        "sha256": "83e556828ce31bda84e02a658c330bd545f22ec91cfedf8260234a87eae7cda0",
+        "dest": "grammars/tablegen"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/MDeiml/tree-sitter-markdown/archive/fa6bfd51727e4bef99f7eec5f43947f73d64ea7d.tar.gz",
+        "sha256": "01d9175eadcb1cfbc6fec73ff26b2e233e6c8afce0f4094fffe37622f4d54c34",
+        "dest": "grammars/markdown"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/MDeiml/tree-sitter-markdown/archive/fa6bfd51727e4bef99f7eec5f43947f73d64ea7d.tar.gz",
+        "sha256": "01d9175eadcb1cfbc6fec73ff26b2e233e6c8afce0f4094fffe37622f4d54c34",
+        "dest": "grammars/markdown_inline"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/UserNobody14/tree-sitter-dart/archive/2d7f66651c9319c1a0e4dda226cc2628fbb66528.tar.gz",
+        "sha256": "83cd1150718a49d850cd7bfc4c62281ed1fcf7b8c9a3666a74f85caf74f29b4b",
+        "dest": "grammars/dart"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-scala/archive/23d21310fe4ab4b3273e7a6810e781224a3e7fe1.tar.gz",
+        "sha256": "ad932aabacbbc7fe37e68beb53ad50917bdbea9653672710efe5eafbbf021435",
+        "dest": "grammars/scala"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/camdencheek/tree-sitter-dockerfile/archive/8ee3a0f7587b2bd8c45c8cb7d28bd414604aec62.tar.gz",
+        "sha256": "d1c86f114d3877b8f52a2a797f455263f114b673380c9e238fa26c9d4e4f36cd",
+        "dest": "grammars/dockerfile"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-git-commit/archive/db88cffa3952dd2328b741af5d0fc69bdb76704f.tar.gz",
+        "sha256": "e9f660b0a1d2d73c25493d3101214c4a26bd38d17973fc03b5f51e2b89b144c9",
+        "dest": "grammars/git-commit"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-diff/archive/fd74c78fa88a20085dbc7bbeaba066f4d1692b63.tar.gz",
+        "sha256": "f52c708d5530e63ca45a2f32ca71b26ef28c0177e44faed2e1436a7209f8dc1c",
+        "dest": "grammars/diff"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-git-rebase/archive/d8a4207ebbc47bd78bacdf48f883db58283f9fd8.tar.gz",
+        "sha256": "8a6c3c7086f81da8657eeaa6bd0835cc10a95810c4f4897687283020a8af3928",
+        "dest": "grammars/git-rebase"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-regex/archive/e1cfca3c79896ff79842f057ea13e529b66af636.tar.gz",
+        "sha256": "6876f3052032222e5b80ccf060b7a453dbf13f27a8c0eb9ba8cae5d5a9a77025",
+        "dest": "grammars/regex"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-git-config/archive/0e4f0baf90b57e5aeb62dcdbf03062c6315d43ea.tar.gz",
+        "sha256": "c9be29ba7d2279d489af08be900f8c3c1b7bcd2a1802cafd696ceb980d800a50",
+        "dest": "grammars/git-config"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/mtoohey31/tree-sitter-gitattributes/archive/3dd50808e3096f93dccd5e9dc7dc3dba2eb12dc4.tar.gz",
+        "sha256": "b921b734d779931fdcb57c5201bf5ef11323b7d056c1588c06a8131e05b80d86",
+        "dest": "grammars/gitattributes"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/shunsambongi/tree-sitter-gitignore/archive/f4685bf11ac466dd278449bcfe5fd014e94aa504.tar.gz",
+        "sha256": "15727772801cf49bd85b147dc7f77f6c3ddabbdb3b3d55c6580e7dd8f7aa559c",
+        "dest": "grammars/gitignore"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/bkegley/tree-sitter-graphql/archive/5e66e961eee421786bdda8495ed1db045e06b5fe.tar.gz",
+        "sha256": "ff542fddb51b1f1c110bb36fa16703d2212eeae0c0d12a2e1bf813c5f5db9507",
+        "dest": "grammars/graphql"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/elm-tooling/tree-sitter-elm/archive/df4cb639c01b76bc9ac9cc66788709a6da20002c.tar.gz",
+        "sha256": "6b38e278af737e576828814d6c4c4e19284ac6158716ffbe265c85ab3d6bf643",
+        "dest": "grammars/elm"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/elixir-lang/tree-sitter-iex/archive/39f20bb51f502e32058684e893c0c0b00bb2332c.tar.gz",
+        "sha256": "ad744f4e1e7d8f7be61cf5b56d10d2bca5d69d91a1c08b5b62882aa3ec2592d6",
+        "dest": "grammars/iex"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/jaredramirez/tree-sitter-rescript/archive/65609807c628477f3b94052e7ef895885ac51c3c.tar.gz",
+        "sha256": "aa1dcc01aa69b12616f2830f55328c30eab555c4b0da15e663d55ef3414ccbf9",
+        "dest": "grammars/rescript"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-erlang/archive/ce0ed253d72c199ab93caba7542b6f62075339c4.tar.gz",
+        "sha256": "58c619438bf10d81ae4d2850103b8335216314fcef340ce644307121395c8493",
+        "dest": "grammars/erlang"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/fwcd/tree-sitter-kotlin/archive/a4f71eb9b8c9b19ded3e0e9470be4b1b77c2b569.tar.gz",
+        "sha256": "b73ad9648cfce7e81faf531ef8806217b4d4f70a248f61b9dda4a0d02bbb76da",
+        "dest": "grammars/kotlin"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/MichaHoffmann/tree-sitter-hcl/archive/3cb7fc28247efbcb2973b97e71c78838ad98a583.tar.gz",
+        "sha256": "97d70265b8bbbc2e131e67fb9ecd2ab9d12b340d3252db3e1637b08385311c66",
+        "dest": "grammars/hcl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/milisims/tree-sitter-org/archive/698bb1a34331e68f83fc24bdd1b6f97016bb30de.tar.gz",
+        "sha256": "bcc2088d8dfcbe1f4912c2a9b3fad3785d3738041f1847331cdcd106bfe1b1e7",
+        "dest": "grammars/org"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/JoranHonig/tree-sitter-solidity/archive/9004b86531cb424bd379424cf7266a4585f2af7d.tar.gz",
+        "sha256": "62be201605f6df377931fb96b3fd75020ab8c540f687fb0754699a7edb2f461a",
+        "dest": "grammars/solidity"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/gleam-lang/tree-sitter-gleam/archive/ae79782c00656945db69641378e688cdb78d52c1.tar.gz",
+        "sha256": "6c619ee10e39f341818511a43004fd43047c5f3b0d197cd3c79e103f103ef59a",
+        "dest": "grammars/gleam"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Hubro/tree-sitter-robot/archive/f1142bfaa6acfce95e25d2c6d18d218f4f533927.tar.gz",
+        "sha256": "5be0f0e20af3d74a1606cd0d45ebc49899c5b54149e5d4f0594f4a7b8da59292",
+        "dest": "grammars/robot"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/r-lib/tree-sitter-r/archive/cc04302e1bff76fa02e129f332f44636813b0c3c.tar.gz",
+        "sha256": "154fa91ce9459dd46a0961f6fbdee5e37591fa0ad47bf169d70d6fb62ae7d11c",
+        "dest": "grammars/r"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/alex-pinkus/tree-sitter-swift/archive/77c6312c8438f4dbaa0350cec92b3d6dd3d74a66.tar.gz",
+        "sha256": "6e26b5c0569872d90963036f1f2759f1214cdd5126ab1e46f60bebe6bad29576",
+        "dest": "grammars/swift"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-embedded-template/archive/d21df11b0ecc6fd211dbe11278e92ef67bd17e97.tar.gz",
+        "sha256": "8b278c3f858e618a33adf57580781ecb5ad700cd9dc331ee87867ebd0f3b7839",
+        "dest": "grammars/embedded-template"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/connorlay/tree-sitter-eex/archive/f742f2fe327463335e8671a87c0b9b396905d1d1.tar.gz",
+        "sha256": "43cf47279ab6e5b04b5267e7a5c44ab1a74f85140e5759fff2f8e75b92ca9ed6",
+        "dest": "grammars/eex"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/phoenixframework/tree-sitter-heex/archive/2e1348c3cf2c9323e87c2744796cf3f3868aa82a.tar.gz",
+        "sha256": "30e6fe486d582c67c9e1a4d1f71eaee738aff01943f23063aa6f20ef12ee9754",
+        "dest": "grammars/heex"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/DerekStride/tree-sitter-sql/archive/3a3f92b29c880488a08bc2baaf1aca6432ec3380.tar.gz",
+        "sha256": "38c29797ceb6c3df022831222d68f6ba4a8c89062ffca116b4d159b81f96edb4",
+        "dest": "grammars/sql"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/PrestonKnopp/tree-sitter-gdscript/archive/a4b57cc3bcbfc24550e858159647e9238e7ad1ac.tar.gz",
+        "sha256": "ae0d9edb73014b99650dda7990e42efd9e0e3a98b670793084e77ab1a13ecfa5",
+        "dest": "grammars/gdscript"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/PrestonKnopp/tree-sitter-godot-resource/archive/b6ef0768711086a86b3297056f9ffb5cc1d77b4a.tar.gz",
+        "sha256": "545b027a0bddda8ff366ecc725ffd0653c730e376e680b9448e781d709edde87",
+        "dest": "grammars/godot-resource"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/LhKipp/tree-sitter-nu/archive/eb95bdac3abd73ef47e53f19c63e74a31405ebd2.tar.gz",
+        "sha256": "82c0ff08fe8d05c2ebd3f621c7ba65c2f30ea7c09e6e853fa5b4f925ca1950c0",
+        "dest": "grammars/nu"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/vala-lang/tree-sitter-vala/archive/c9eea93ba2ec4ec1485392db11945819779745b3.tar.gz",
+        "sha256": "24c7d6fa9ee36b4adf3e7b55b1a012fddba0db94a77e58d9939bf61858d72be3",
+        "dest": "grammars/vala"
+    },
+    {
+        "type": "git",
+        "url": "https://git.sr.ht/~ecmma/tree-sitter-hare",
+        "commit": "bc26a6a949f2e0d98b7bfc437d459b250900a165",
+        "dest": "grammars/hare"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/joelspadin/tree-sitter-devicetree/archive/877adbfa0174d25894c40fa75ad52d4515a36368.tar.gz",
+        "sha256": "26ed709af78d2a57e897f203dd1620b270f478910ee7c585ef77acbe16e65237",
+        "dest": "grammars/devicetree"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/fvacek/tree-sitter-cpon/archive/0d01fcdae5a53191df5b1349f9bce053833270e7.tar.gz",
+        "sha256": "2b434fb60dba33c33ff16371a05bdf0af73db4ae294f3f0dcd9d0d2f4f16cb98",
+        "dest": "grammars/cpon"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ap29600/tree-sitter-odin/archive/b219207e49ffca2952529d33e94ed63b1b75c4f1.tar.gz",
+        "sha256": "ebc970c718d1a60637ad0d29bbd516bd3ab359f62a8f65a4e73f50628a9b8315",
+        "dest": "grammars/odin"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/staysail/tree-sitter-meson/archive/32a83e8f200c347232fa795636cfe60dde22957a.tar.gz",
+        "sha256": "165213b0b86835a143a862050042eb6f859d615d0e4a6c03e016fe21ae2ed055",
+        "dest": "grammars/meson"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/metio/tree-sitter-ssh-client-config/archive/e45c6d5c71657344d4ecaf87dafae7736f776c57.tar.gz",
+        "sha256": "448d8d2909828c2ad96ab4766f9d7e89ecbf133b34a746770cebeb6d3050bb9b",
+        "dest": "grammars/sshclientconfig"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/6cdh/tree-sitter-scheme/archive/c0741320bfca6b7b5b7a13b5171275951e96a842.tar.gz",
+        "sha256": "af175f9614d88aa3d4a2f885d39caee419bf6cd231bb73428281f4d2544c679b",
+        "dest": "grammars/scheme"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/vlang/vls/archive/66cf9d3086fb5ecc827cb32c64c5d812ab17d2c6.tar.gz",
+        "sha256": "22ff4e561cef4274f83ff7193cb24db876e10c45294aad3529af43a658b9f78c",
+        "dest": "grammars/v"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/andreytkachenko/tree-sitter-verilog/archive/514d8d70593d29ef3ef667fa6b0e504ae7c977e3.tar.gz",
+        "sha256": "555f1998e7ec001c33800779dc2a87b5771fe0fae32d892d9ab3f6a8c6fbbb69",
+        "dest": "grammars/verilog"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-edoc/archive/74774af7b45dd9cefbf9510328fc6ff2374afc50.tar.gz",
+        "sha256": "aa5d46efc4ed9192c63ccdcfd9120f574309f117e17401ce4adcb91df7579dd9",
+        "dest": "grammars/edoc"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/tree-sitter/tree-sitter-jsdoc/archive/189a6a4829beb9cdbe837260653b4a3dfb0cc3db.tar.gz",
+        "sha256": "ef7175e0191a39fb055015e1cf6f464f3f29206b897be561646a84cc7f17fb82",
+        "dest": "grammars/jsdoc"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/bollian/tree-sitter-openscad/archive/5c3ce93df0ac1da7197cf6ae125aade26d6b8972.tar.gz",
+        "sha256": "93fd5b0f34b98766ad628b367383c9c660843a1e9b81a953061d57e88580df83",
+        "dest": "grammars/openscad"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/victorhqc/tree-sitter-prisma/archive/eca2596a355b1a9952b4f80f8f9caed300a272b5.tar.gz",
+        "sha256": "4597c60bbf7512e6ffaabb17ffaa9232f3af159841a2f3dba6769c039b79cbb7",
+        "dest": "grammars/prisma"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/sogaiu/tree-sitter-clojure/archive/e57c569ae332ca365da623712ae1f50f84daeae2.tar.gz",
+        "sha256": "7dac550c0d5445fb190615c3ea415b18f50bb09d1002fe49a7423cbdbda83ba7",
+        "dest": "grammars/clojure"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ckafi/tree-sitter-elvish/archive/e50787cadd3bc54f6d9c0704493a79078bb8a4e5.tar.gz",
+        "sha256": "eefc7d36da008225f946e6bd7052cab9e3e97cb88aae61812dc8935480e9e1e9",
+        "dest": "grammars/elvish"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/stadelmanma/tree-sitter-fortran/archive/f0f2f100952a353e64e26b0fa710b4c296d7af13.tar.gz",
+        "sha256": "f239f5a6f83cfaf3df1cd9d9aea4f984000b87654bd4e56330c2256f6ee45b94",
+        "dest": "grammars/fortran"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Philipp-M/tree-sitter-ungrammar/archive/0113de880a58ea14f2a75802e9b99fcc25003d9c.tar.gz",
+        "sha256": "42daac59437c8e42f69f0ee5391ac219df4193cdd396b83b68d8bbc14c83cd5d",
+        "dest": "grammars/ungrammar"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/rydesun/tree-sitter-dot/archive/917230743aa10f45a408fea2ddb54bbbf5fbe7b7.tar.gz",
+        "sha256": "efa297a26fa50d765513af02e9523b49007fb3a40cda34aea06c831514e1d582",
+        "dest": "grammars/dot"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/eonpatapon/tree-sitter-cue/archive/61843e3beebf19417e4fede4e8be4df1084317ad.tar.gz",
+        "sha256": "80e5c826b2498e70730681f0e5240d4bafa950db26633519c4d9e225b3f6410e",
+        "dest": "grammars/cue"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/jrmoulton/tree-sitter-slint/archive/0d4dda94f96623302dfc234e06be62a5717f47da.tar.gz",
+        "sha256": "a8cd71840f7b685bbb868da8750bc0a2c2105532ceceea9daeac0010bba48f41",
+        "dest": "grammars/slint"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/alexanderbrevig/tree-sitter-task/archive/f2cb435c5dbf3ee19493e224485d977cb2d36d8b.tar.gz",
+        "sha256": "1e181c226959addb2713a74b371bd6520aab55aa0bf06e3937fa6dfc7b132317",
+        "dest": "grammars/task"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/synaptiko/tree-sitter-xit/archive/7d7902456061bc2ad21c64c44054f67b5515734c.tar.gz",
+        "sha256": "27be731c4bd498ef7c9f98c268117411e626bc0264c26bff86ce042aa7aea88a",
+        "dest": "grammars/xit"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/greym0uth/tree-sitter-esdl/archive/b840c8a8028127e0a7c6e6c45141adade2bd75cf.tar.gz",
+        "sha256": "2ea1a6c683199836140c889e183f5cdcde163c31c3459871db8e2bec6274ae1d",
+        "dest": "grammars/esdl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Isopod/tree-sitter-pascal/archive/2fd40f477d3e2794af152618ccfac8d92eb72a66.tar.gz",
+        "sha256": "6c6d45ed5e53beef79b9fdfacfda74721ab44d7495f85f75c6169dcd4c11157b",
+        "dest": "grammars/pascal"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Giorbo/tree-sitter-sml/archive/bd4055d5554614520d4a0706b34dc0c317c6b608.tar.gz",
+        "sha256": "8b40b4545e4cc8ae5b03c920279227ef40eea9586022c07846e1f1642af4b870",
+        "dest": "grammars/sml"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/sourcegraph/tree-sitter-jsonnet/archive/0475a5017ad7dc84845d1d33187f2321abcb261d.tar.gz",
+        "sha256": "bc64dcebfcd50259af983aec75afb991614b59b958a30f0e0602f9bc738ffd1b",
+        "dest": "grammars/jsonnet"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/virchau13/tree-sitter-astro/archive/5f5c3e73c45967df9aa42f861fad2d77cd4e0900.tar.gz",
+        "sha256": "2917e7cb832f8bebc4efdbf80597315e3aab49d17abbe9d230ab6d4a1b9dd4a6",
+        "dest": "grammars/astro"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/vito/tree-sitter-bass/archive/501133e260d768ed4e1fd7374912ed5c86d6fd90.tar.gz",
+        "sha256": "f6d563ba14ce6c1a4e56a298786117bf5fb80b3c20ccb5d4242030476dd0bc88",
+        "dest": "grammars/bass"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/wasm-lsp/tree-sitter-wasm/archive/2ca28a9f9d709847bf7a3de0942a84e912f59088.tar.gz",
+        "sha256": "96f4e008abc75ec94a290f7a49963cbecaf0605f58fa0ba175ab04b96c911aeb",
+        "dest": "grammars/wat"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/wasm-lsp/tree-sitter-wasm/archive/2ca28a9f9d709847bf7a3de0942a84e912f59088.tar.gz",
+        "sha256": "96f4e008abc75ec94a290f7a49963cbecaf0605f58fa0ba175ab04b96c911aeb",
+        "dest": "grammars/wast"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/gdamore/tree-sitter-d/archive/601c4a1e8310fb2f3c43fa8a923d0d27497f3c04.tar.gz",
+        "sha256": "6262b8a58e5eba271ec9c7d5730a7738459d33114f9ebb47c072fcc241b7fbad",
+        "dest": "grammars/d"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/charmbracelet/tree-sitter-vhs/archive/c6d81f34c011c29ee86dd73b45a8ecc9f2e2bdaf.tar.gz",
+        "sha256": "1d4073223811d61b3cdd9aa9609db9d8aeef53071b64340a22d2bdaf97b32c86",
+        "dest": "grammars/vhs"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Unoqwy/tree-sitter-kdl/archive/e1cd292c6d15df6610484e1d4b5c987ecad52373.tar.gz",
+        "sha256": "a67c7e4f5df4910bfd1cfd27584565d81ae19db2775f68088c51c71096ba5190",
+        "dest": "grammars/kdl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/RenjiSann/tree-sitter-xml/archive/48a7c2b6fb9d515577e115e6788937e837815651.tar.gz",
+        "sha256": "c32ea09ba83dd6ece1c22ae59be7ffb21d2ca33b866c1974a233c71ded8dd74c",
+        "dest": "grammars/xml"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/KMikeeU/tree-sitter-dtd/archive/6116becb02a6b8e9588ef73d300a9ba4622e156f.tar.gz",
+        "sha256": "35fddba6496ca0cc1a6b8ddb99b3c4c4b024e71b8a88794786371b3d8e6893b6",
+        "dest": "grammars/dtd"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/hh9527/tree-sitter-wit/archive/c917790ab9aec50c5fd664cbfad8dd45110cfff3.tar.gz",
+        "sha256": "19a536788a176af07c94c9df4803a1db9dedaef5cb79d41df053b4e22fe2b595",
+        "dest": "grammars/wit"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/justinmk/tree-sitter-ini/archive/4d247fb876b4ae6b347687de4a179511bf67fcbc.tar.gz",
+        "sha256": "c263fa7381ced032a874a20b942ad634f02738b02f5b1ac0da6f4ced8da712a3",
+        "dest": "grammars/ini"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/the-mikedavis/tree-sitter-bicep/archive/d8e097fcfa143854861ef737161163a09cc2916b.tar.gz",
+        "sha256": "84232fcadfe7603fb15253303f2d149cdf11d24f595c921e548396e9cd761b72",
+        "dest": "grammars/bicep"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/yuja/tree-sitter-qmljs/archive/0b2b25bcaa7d4925d5f0dda16f6a99c588a437f1.tar.gz",
+        "sha256": "430aed082c818b7dd7fee7f8e87256e53a4fac3843866fd35f80c66a06f13cf3",
+        "dest": "grammars/qmljs"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/monaqa/tree-sitter-mermaid/archive/d787c66276e7e95899230539f556e8b83ee16f6d.tar.gz",
+        "sha256": "17c336e0e75d9c659eb5cb596537d7dd73d5443f19ab648d75ad4c1d30caa5a1",
+        "dest": "grammars/mermaid"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/mstanciu552/tree-sitter-matlab/archive/2d5d3d5193718a86477d4335aba5b34e79147326.tar.gz",
+        "sha256": "b79cb6e2f5c8fb5778a1db40f69bc65951190ac76031ee8f3afe2c8c9637db81",
+        "dest": "grammars/matlab"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/mfelsche/tree-sitter-ponylang/archive/ef66b151bc2604f431b5668fcec4747db4290e11.tar.gz",
+        "sha256": "f8bb843ed3c850c7e5517149d98a26d0832681af4969b9e1a351169a0ec447fd",
+        "dest": "grammars/ponylang"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/jbellerb/tree-sitter-dhall/archive/affb6ee38d629c9296749767ab832d69bb0d9ea8.tar.gz",
+        "sha256": "e5f4feddb4b6e6f51f482d8607b42203601df8a486b70a1def15c22f7203f655",
+        "dest": "grammars/dhall"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/mtoohey31/tree-sitter-pem/archive/be67a4330a1aa507c7297bc322204f936ec1132c.tar.gz",
+        "sha256": "56c59ab004e50d711af41bde32bef4e7cc0fec1ea15b1ed0813f98124673f4db",
+        "dest": "grammars/pem"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ath3/tree-sitter-passwd/archive/20239395eacdc2e0923a7e5683ad3605aee7b716.tar.gz",
+        "sha256": "74996de5b372b2fe106acae9b3aa036f008000e173a9a1ccfd258c134ccff5a7",
+        "dest": "grammars/passwd"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/ath3/tree-sitter-hosts/archive/301b9379ce7dfc8bdbe2c2699a6887dcb73953f9.tar.gz",
+        "sha256": "ef454996b90abe0d209a6e32af509b243c2b681de8189e7d772342801a4b395e",
+        "dest": "grammars/hosts"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Jummit/tree-sitter-uxntal/archive/9297e95ef74380b0ad84c4fd98f91e9f6e4319e6.tar.gz",
+        "sha256": "c2cf07e4a06cdedfe2dbefcee1d12ac2c261c8fd2bbdb2bb80b6f3bfc0b99d0b",
+        "dest": "grammars/uxntal"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/Philipp-M/tree-sitter-yuck/archive/e3d91a3c65decdea467adebe4127b8366fa47919.tar.gz",
+        "sha256": "8139223817da957603b359048c7ba7499d0c5e7f5a172c8f8ed0beee578aac0b",
+        "dest": "grammars/yuck"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/PRQL/tree-sitter-prql/archive/3f27cac466f030ee7d985d91eba5470e01dd21ea.tar.gz",
+        "sha256": "3aa64533ce789789dae1972176b87f45689d1db40de92eb7ab833cb36e58039f",
+        "dest": "grammars/prql"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/erasin/tree-sitter-po/archive/417cee9abb2053ed26b19e7de972398f2da9b29e.tar.gz",
+        "sha256": "1ebb0f779005000aeca0a6f85217295872bbd5471a3b0c6737f6bb3ab95927ee",
+        "dest": "grammars/po"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/naclsn/tree-sitter-nasm/archive/a0db15db6fcfb1bf2cc8702500e55e558825c48b.tar.gz",
+        "sha256": "3e0943b0c1275f7e6b2b3c5a0558a623a3a18431a3b974f60fc0cf29986b1dd6",
+        "dest": "grammars/nasm"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/stsewd/tree-sitter-rst/archive/25e6328872ac3a764ba8b926aea12719741103f1.tar.gz",
+        "sha256": "b95136bea41e10508ea3232c00a7624f95a3d66c4ad75c902e5970d1ed6090f4",
+        "dest": "grammars/rst"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/amaanq/tree-sitter-capnp/archive/fc6e2addf103861b9b3dffb82c543eb6b71061aa.tar.gz",
+        "sha256": "87d53b88bf959a468237e69ab426d11882481b8ffd0a6d7178459efdce602b5e",
+        "dest": "grammars/capnp"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/indoorvivants/tree-sitter-smithy/archive/cf8c7eb9faf7c7049839585eac19c94af231e6a0.tar.gz",
+        "sha256": "a06ab3429124cbfe37209ee9396725a93282d56897dce34508313512083cc774",
+        "dest": "grammars/smithy"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/teburd/tree-sitter-vhdl/archive/c57313adee2231100db0a7880033f6865deeadb2.tar.gz",
+        "sha256": "749e704dcfe735b386365113bfd285971bbb645fb7caa305cb2a89927680fd78",
+        "dest": "grammars/vhdl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/FallenAngel97/tree-sitter-rego/archive/b2667c975f07b33be3ceb83bea5cfbad88095866.tar.gz",
+        "sha256": "e538c01b58b219cde79c9c5ec9448def536404b419bbaa9b84a82e313b087c9a",
+        "dest": "grammars/rego"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/aMOPel/tree-sitter-nim/archive/240239b232550e431d67de250d1b5856209e7f06.tar.gz",
+        "sha256": "c9551cf3c3780294c9be4640fe4cd6b783cb01358583a3c2d75c00a5fab761af",
+        "dest": "grammars/nim"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/pfeiferj/tree-sitter-hurl/archive/264c42064b61ee21abe88d0061f29a0523352e22.tar.gz",
+        "sha256": "f4b3f7f9d548acbd58d7b0b6f53186b26e8daf6a12f75545a1aa5aab0e409a08",
+        "dest": "grammars/hurl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/markdoc-extra/tree-sitter-markdoc/archive/5ffe71b29e8a3f94823913ea9cea51fcfa7e3bf8.tar.gz",
+        "sha256": "f1cb713db2757155c180b8037289f599e3db7c9c7e406c0f71142f5779f51879",
+        "dest": "grammars/markdoc"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/lefp/tree-sitter-opencl/archive/8e1d24a57066b3cd1bb9685bbc1ca9de5c1b78fb.tar.gz",
+        "sha256": "919d96678787666c0381b2382ca4942fd1f29a688e58c3ee36e7193fbb466f13",
+        "dest": "grammars/opencl"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/IndianBoy42/tree-sitter-just/archive/8af0aab79854aaf25b620a52c39485849922f766.tar.gz",
+        "sha256": "3cf96a99882df947121249faed06b54b6f9d863805efde9f2da6fe8f84dd2f31",
+        "dest": "grammars/just"
+    },
+    {
+        "type": "git",
+        "url": "https://gitlab.com/gabmus/tree-sitter-blueprint",
+        "commit": "7f1a5df44861291d6951b6b2146a9fef4c226e14",
+        "dest": "grammars/blueprint"
+    },
+    {
+        "type": "archive",
+        "url": "https://github.com/alexanderbrevig/tree-sitter-forth/archive/c6fae50a17763af827604627c0fa9e4604aaac0b.tar.gz",
+        "sha256": "6defd3075d59fb1fa137217725337fd90b00e17b1630db80ebc71b93018f14f4",
+        "dest": "grammars/forth"
+    },
+    {
+        "type": "inline",
+        "dest-filename": "paths.txt",
+        "contents": "rust grammars/rust\nsway grammars/sway\ntoml grammars/toml\nawk grammars/awk\nprotobuf grammars/protobuf\nelixir grammars/elixir\nfish grammars/fish\njson grammars/json\nc grammars/c\ncpp grammars/cpp\nc-sharp grammars/c-sharp\ngo grammars/go\ngomod grammars/gomod\ngotmpl grammars/gotmpl\ngowork grammars/gowork\njavascript grammars/javascript\ntypescript grammars/typescript/typescript\ntsx grammars/tsx/tsx\ncss grammars/css\nscss grammars/scss\nhtml grammars/html\npython grammars/python\nnickel grammars/nickel\nnix grammars/nix\nruby grammars/ruby\nbash grammars/bash\nphp grammars/php\ntwig grammars/twig\nlatex grammars/latex\nbibtex grammars/bibtex\nlean grammars/lean\njulia grammars/julia\njava grammars/java\nledger grammars/ledger\nbeancount grammars/beancount\nocaml grammars/ocaml/ocaml\nocaml-interface grammars/ocaml-interface/interface\nlua grammars/lua\nsvelte grammars/svelte\nvue grammars/vue\nyaml grammars/yaml\nhaskell grammars/haskell\nzig grammars/zig\ntsq grammars/tsq\ncmake grammars/cmake\nmake grammars/make\nglsl grammars/glsl\nperl grammars/perl\ncomment grammars/comment\nwgsl grammars/wgsl\nllvm grammars/llvm\nllvm-mir grammars/llvm-mir\ntablegen grammars/tablegen\nmarkdown grammars/markdown/tree-sitter-markdown\nmarkdown_inline grammars/markdown_inline/tree-sitter-markdown-inline\ndart grammars/dart\nscala grammars/scala\ndockerfile grammars/dockerfile\ngit-commit grammars/git-commit\ndiff grammars/diff\ngit-rebase grammars/git-rebase\nregex grammars/regex\ngit-config grammars/git-config\ngitattributes grammars/gitattributes\ngitignore grammars/gitignore\ngraphql grammars/graphql\nelm grammars/elm\niex grammars/iex\nrescript grammars/rescript\nerlang grammars/erlang\nkotlin grammars/kotlin\nhcl grammars/hcl\norg grammars/org\nsolidity grammars/solidity\ngleam grammars/gleam\nrobot grammars/robot\nr grammars/r\nswift grammars/swift\nembedded-template grammars/embedded-template\neex grammars/eex\nheex grammars/heex\nsql grammars/sql\ngdscript grammars/gdscript\ngodot-resource grammars/godot-resource\nnu grammars/nu\nvala grammars/vala\nhare grammars/hare\ndevicetree grammars/devicetree\ncpon grammars/cpon\nodin grammars/odin\nmeson grammars/meson\nsshclientconfig grammars/sshclientconfig\nscheme grammars/scheme\nv grammars/v/tree_sitter_v\nverilog grammars/verilog\nedoc grammars/edoc\njsdoc grammars/jsdoc\nopenscad grammars/openscad\nprisma grammars/prisma\nclojure grammars/clojure\nelvish grammars/elvish\nfortran grammars/fortran\nungrammar grammars/ungrammar\ndot grammars/dot\ncue grammars/cue\nslint grammars/slint\ntask grammars/task\nxit grammars/xit\nesdl grammars/esdl\npascal grammars/pascal\nsml grammars/sml\njsonnet grammars/jsonnet\nastro grammars/astro\nbass grammars/bass\nwat grammars/wat/wat\nwast grammars/wast/wast\nd grammars/d\nvhs grammars/vhs\nkdl grammars/kdl\nxml grammars/xml\ndtd grammars/dtd\nwit grammars/wit\nini grammars/ini\nbicep grammars/bicep\nqmljs grammars/qmljs\nmermaid grammars/mermaid\nmatlab grammars/matlab\nponylang grammars/ponylang\ndhall grammars/dhall\npem grammars/pem\npasswd grammars/passwd\nhosts grammars/hosts\nuxntal grammars/uxntal\nyuck grammars/yuck\nprql grammars/prql\npo grammars/po\nnasm grammars/nasm\nrst grammars/rst\ncapnp grammars/capnp\nsmithy grammars/smithy\nvhdl grammars/vhdl\nrego grammars/rego\nnim grammars/nim\nhurl grammars/hurl\nmarkdoc grammars/markdoc\nopencl grammars/opencl\njust grammars/just\nblueprint grammars/blueprint\nforth grammars/forth\n"
+    }
+]

@@ -1,4 +1,5 @@
 Cargo.lock
+languages.toml
 build.sh
 .flatpak-builder
 *.tar.gz
