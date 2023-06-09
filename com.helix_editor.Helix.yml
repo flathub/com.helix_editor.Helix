@@ -127,11 +127,11 @@ modules:
       - type: dir
         path: wrapper
       - type: file
-        path: helix_first_run.txt
+        path: HELIX_FIRST_RUN.md
     config-opts:
       - -Deditor_binary=/app/lib/helix/hx
       - -Dprogram_name=hx-wrapper
       - -Deditor_title=Helix
       - -Dflagfile_prefix=flatpak-helix
-      - -Dfirst_run_template=./helix_first_run.txt
+      - -Dfirst_run_template=./HELIX_FIRST_RUN.md
       - -Ddefault_loglevel=0
