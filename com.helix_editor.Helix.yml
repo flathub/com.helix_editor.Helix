@@ -71,16 +71,16 @@ modules:
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - HELIX_DISABLE_AUTO_GRAMMAR_BUILD=1 cargo --offline build --profile=opt
-      - install -D ./target/opt/hx -t /app/share/helix
+      - install -Dm755 ./target/opt/hx -t /app/share/helix
 
       - mkdir -p /app/share/helix/runtime
       - cp -r ./runtime/themes /app/share/helix/runtime/themes
       - cp -r ./runtime/queries /app/share/helix/runtime/queries
       - cp ./runtime/tutor /app/share/helix/runtime/tutor
 
-      - install -D ./contrib/Helix.desktop -t /app/share/applications
-      - install -D ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
-      - install -D ./contrib/Helix.appdata.xml -t /app/share/metainfo
+      - install -Dm644 ./contrib/Helix.desktop -t /app/share/applications
+      - install -Dm644 ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
+      - install -Dm644 ./contrib/Helix.appdata.xml -t /app/share/metainfo
 
       - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/Helix.desktop
     sources:
@@ -116,7 +116,7 @@ modules:
           gcc $flags -c "$path/src/parser.c"
 
           g++ $flags -o "$name.so" -shared ./*.o
-          install -D "$name.so" -t /app/share/helix/runtime/grammars
+          install -Dm755 "$name.so" -t /app/share/helix/runtime/grammars
 
           rm ./*.o
         done
