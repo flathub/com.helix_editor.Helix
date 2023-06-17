@@ -71,16 +71,16 @@ modules:
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - HELIX_DISABLE_AUTO_GRAMMAR_BUILD=1 cargo --offline build --profile=opt
-      - install -D ./target/opt/hx -t /app/share/helix
+      - install -Dm755 ./target/opt/hx -t /app/lib/helix
 
-      - mkdir -p /app/share/helix/runtime
-      - cp -r ./runtime/themes /app/share/helix/runtime/themes
-      - cp -r ./runtime/queries /app/share/helix/runtime/queries
-      - cp ./runtime/tutor /app/share/helix/runtime/tutor
+      - mkdir -p /app/lib/helix/runtime
+      - cp -r ./runtime/themes /app/lib/helix/runtime/themes
+      - cp -r ./runtime/queries /app/lib/helix/runtime/queries
+      - cp ./runtime/tutor /app/lib/helix/runtime/tutor
 
-      - install -D ./contrib/Helix.desktop -t /app/share/applications
-      - install -D ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
-      - install -D ./contrib/Helix.appdata.xml -t /app/share/metainfo
+      - install -Dm644 ./contrib/Helix.desktop -t /app/share/applications
+      - install -Dm644 ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
+      - install -Dm644 ./contrib/Helix.appdata.xml -t /app/share/metainfo
 
       - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/Helix.desktop
     sources:
@@ -103,22 +103,22 @@ modules:
     build-commands:
       - |
         set -e
-        cat paths.txt | while read name path; do
-          echo $path
-          FLAGS=("-I$path/src" "-g" "-O3" "-fPIC" "-fno-exceptions" "-Wl,-z,relro,-z,now") 
+        cat paths.txt | while read -r name path; do
+          echo "$path"
+          flags="-I$path/src -g -O3 -fPIC -fno-exceptions -Wl,-z,relro,-z,now" 
 
-          if [[ -e "$path/src/scanner.cc" ]]; then
-            g++ -c "$path/src/scanner.cc" -o scanner.o ${FLAGS[@]}
-          elif [[ -e "$path/src/scanner.c" ]]; then
-            gcc -c "$path/src/scanner.c" -o scanner.o ${FLAGS[@]}
+          if [ -e "$path/src/scanner.cc" ]; then
+            g++ $flags -c "$path/src/scanner.cc"
+          elif [ -e "$path/src/scanner.c" ]; then
+            gcc $flags -c "$path/src/scanner.c"
           fi
 
-          gcc -c "$path/src/parser.c" -o parser.o ${FLAGS[@]}
-          g++ -shared -o $name.so *.o ${FLAGS[@]}
+          gcc $flags -c "$path/src/parser.c"
 
-          rm *.o
+          g++ $flags -o "$name.so" -shared ./*.o
+          install -Dm755 "$name.so" -t /app/lib/helix/runtime/grammars
 
-          install -D $name.so -t /app/share/helix/runtime/grammars
+          rm ./*.o
         done
 
   - name: wrapper
@@ -127,11 +127,11 @@ modules:
       - type: dir
         path: wrapper
       - type: file
-        path: helix_first_run.txt
+        path: HELIX_FIRST_RUN.md
     config-opts:
-      - -Deditor_binary=/app/share/helix/hx
+      - -Deditor_binary=/app/lib/helix/hx
       - -Dprogram_name=hx-wrapper
       - -Deditor_title=Helix
       - -Dflagfile_prefix=flatpak-helix
-      - -Dfirst_run_template=./helix_first_run.txt
+      - -Dfirst_run_template=./HELIX_FIRST_RUN.md
       - -Ddefault_loglevel=0

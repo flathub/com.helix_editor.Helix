@@ -55,8 +55,8 @@
     },
     {
         "type": "archive",
-        "url": "https://github.com/tree-sitter/tree-sitter-cpp/archive/2d2c4aee8672af4c7c8edff68e7dd4c07e88d2b1.tar.gz",
-        "sha256": "3e1a94c5d8d50d8c40c488506e90151b08b3c525249f26263376c9c10051fdf4",
+        "url": "https://github.com/tree-sitter/tree-sitter-cpp/archive/670404d7c689be1c868a46f919ba2a3912f2b7ef.tar.gz",
+        "sha256": "8f7906cd42871cb8e9b4566133577553dd1910a65180db021cdbb3f3844b44a7",
         "dest": "grammars/cpp"
     },
     {
@@ -516,9 +516,9 @@
         "dest": "grammars/vala"
     },
     {
-        "type": "git",
-        "url": "https://git.sr.ht/~ecmma/tree-sitter-hare",
-        "commit": "bc26a6a949f2e0d98b7bfc437d459b250900a165",
+        "type": "archive",
+        "url": "https://git.sr.ht/~ecmma/tree-sitter-hare/archive/bc26a6a949f2e0d98b7bfc437d459b250900a165.tar.gz",
+        "sha256": "24d37cf7daceff3db2fccf6ac940f9ec4bfe2f6b50ccbc2ba77c93373194a47f",
         "dest": "grammars/hare"
     },
     {
@@ -565,8 +565,8 @@
     },
     {
         "type": "archive",
-        "url": "https://github.com/andreytkachenko/tree-sitter-verilog/archive/514d8d70593d29ef3ef667fa6b0e504ae7c977e3.tar.gz",
-        "sha256": "555f1998e7ec001c33800779dc2a87b5771fe0fae32d892d9ab3f6a8c6fbbb69",
+        "url": "https://github.com/tree-sitter/tree-sitter-verilog/archive/4457145e795b363f072463e697dfe2f6973c9a52.tar.gz",
+        "sha256": "f4c276128774485eccd07d33e07070cfeded4a000b08438cb6b8cf2fbd7850f4",
         "dest": "grammars/verilog"
     },
     {
@@ -882,20 +882,26 @@
         "dest": "grammars/just"
     },
     {
-        "type": "git",
-        "url": "https://gitlab.com/gabmus/tree-sitter-blueprint",
-        "commit": "7f1a5df44861291d6951b6b2146a9fef4c226e14",
+        "type": "archive",
+        "url": "https://gitlab.com/gabmus/tree-sitter-blueprint/-/archive/7f1a5df44861291d6951b6b2146a9fef4c226e14/archive.tar.gz",
+        "sha256": "ab19db287d03e8eed27bba4c9d01cd34aff68b5ac65165f744bd912cf829f695",
         "dest": "grammars/blueprint"
     },
     {
         "type": "archive",
-        "url": "https://github.com/alexanderbrevig/tree-sitter-forth/archive/c6fae50a17763af827604627c0fa9e4604aaac0b.tar.gz",
-        "sha256": "6defd3075d59fb1fa137217725337fd90b00e17b1630db80ebc71b93018f14f4",
+        "url": "https://github.com/alexanderbrevig/tree-sitter-forth/archive/304ed77beb113e37af38b20ff14e3c37bf350d10.tar.gz",
+        "sha256": "f3b57c26d17f3a47c6e45914389c6b2f7b171a5aac93acddc4df30082941144a",
         "dest": "grammars/forth"
+    },
+    {
+        "type": "archive",
+        "url": "https://codeberg.org/xasc/tree-sitter-t32/archive/1dd98248b01e4a3933c1b85b58bab0875e2ba437.tar.gz",
+        "sha256": "be89f66cb249277429d0f8704f7121cfd29528b442d4fbae9ed60299b28abd55",
+        "dest": "grammars/t32"
     },
     {
         "type": "inline",
         "dest-filename": "paths.txt",
-        "contents": "rust grammars/rust\nsway grammars/sway\ntoml grammars/toml\nawk grammars/awk\nprotobuf grammars/protobuf\nelixir grammars/elixir\nfish grammars/fish\njson grammars/json\nc grammars/c\ncpp grammars/cpp\nc-sharp grammars/c-sharp\ngo grammars/go\ngomod grammars/gomod\ngotmpl grammars/gotmpl\ngowork grammars/gowork\njavascript grammars/javascript\ntypescript grammars/typescript/typescript\ntsx grammars/tsx/tsx\ncss grammars/css\nscss grammars/scss\nhtml grammars/html\npython grammars/python\nnickel grammars/nickel\nnix grammars/nix\nruby grammars/ruby\nbash grammars/bash\nphp grammars/php\ntwig grammars/twig\nlatex grammars/latex\nbibtex grammars/bibtex\nlean grammars/lean\njulia grammars/julia\njava grammars/java\nledger grammars/ledger\nbeancount grammars/beancount\nocaml grammars/ocaml/ocaml\nocaml-interface grammars/ocaml-interface/interface\nlua grammars/lua\nsvelte grammars/svelte\nvue grammars/vue\nyaml grammars/yaml\nhaskell grammars/haskell\nzig grammars/zig\ntsq grammars/tsq\ncmake grammars/cmake\nmake grammars/make\nglsl grammars/glsl\nperl grammars/perl\ncomment grammars/comment\nwgsl grammars/wgsl\nllvm grammars/llvm\nllvm-mir grammars/llvm-mir\ntablegen grammars/tablegen\nmarkdown grammars/markdown/tree-sitter-markdown\nmarkdown_inline grammars/markdown_inline/tree-sitter-markdown-inline\ndart grammars/dart\nscala grammars/scala\ndockerfile grammars/dockerfile\ngit-commit grammars/git-commit\ndiff grammars/diff\ngit-rebase grammars/git-rebase\nregex grammars/regex\ngit-config grammars/git-config\ngitattributes grammars/gitattributes\ngitignore grammars/gitignore\ngraphql grammars/graphql\nelm grammars/elm\niex grammars/iex\nrescript grammars/rescript\nerlang grammars/erlang\nkotlin grammars/kotlin\nhcl grammars/hcl\norg grammars/org\nsolidity grammars/solidity\ngleam grammars/gleam\nrobot grammars/robot\nr grammars/r\nswift grammars/swift\nembedded-template grammars/embedded-template\neex grammars/eex\nheex grammars/heex\nsql grammars/sql\ngdscript grammars/gdscript\ngodot-resource grammars/godot-resource\nnu grammars/nu\nvala grammars/vala\nhare grammars/hare\ndevicetree grammars/devicetree\ncpon grammars/cpon\nodin grammars/odin\nmeson grammars/meson\nsshclientconfig grammars/sshclientconfig\nscheme grammars/scheme\nv grammars/v/tree_sitter_v\nverilog grammars/verilog\nedoc grammars/edoc\njsdoc grammars/jsdoc\nopenscad grammars/openscad\nprisma grammars/prisma\nclojure grammars/clojure\nelvish grammars/elvish\nfortran grammars/fortran\nungrammar grammars/ungrammar\ndot grammars/dot\ncue grammars/cue\nslint grammars/slint\ntask grammars/task\nxit grammars/xit\nesdl grammars/esdl\npascal grammars/pascal\nsml grammars/sml\njsonnet grammars/jsonnet\nastro grammars/astro\nbass grammars/bass\nwat grammars/wat/wat\nwast grammars/wast/wast\nd grammars/d\nvhs grammars/vhs\nkdl grammars/kdl\nxml grammars/xml\ndtd grammars/dtd\nwit grammars/wit\nini grammars/ini\nbicep grammars/bicep\nqmljs grammars/qmljs\nmermaid grammars/mermaid\nmatlab grammars/matlab\nponylang grammars/ponylang\ndhall grammars/dhall\npem grammars/pem\npasswd grammars/passwd\nhosts grammars/hosts\nuxntal grammars/uxntal\nyuck grammars/yuck\nprql grammars/prql\npo grammars/po\nnasm grammars/nasm\nrst grammars/rst\ncapnp grammars/capnp\nsmithy grammars/smithy\nvhdl grammars/vhdl\nrego grammars/rego\nnim grammars/nim\nhurl grammars/hurl\nmarkdoc grammars/markdoc\nopencl grammars/opencl\njust grammars/just\nblueprint grammars/blueprint\nforth grammars/forth\n"
+        "contents": "rust grammars/rust\nsway grammars/sway\ntoml grammars/toml\nawk grammars/awk\nprotobuf grammars/protobuf\nelixir grammars/elixir\nfish grammars/fish\njson grammars/json\nc grammars/c\ncpp grammars/cpp\nc-sharp grammars/c-sharp\ngo grammars/go\ngomod grammars/gomod\ngotmpl grammars/gotmpl\ngowork grammars/gowork\njavascript grammars/javascript\ntypescript grammars/typescript/typescript\ntsx grammars/tsx/tsx\ncss grammars/css\nscss grammars/scss\nhtml grammars/html\npython grammars/python\nnickel grammars/nickel\nnix grammars/nix\nruby grammars/ruby\nbash grammars/bash\nphp grammars/php\ntwig grammars/twig\nlatex grammars/latex\nbibtex grammars/bibtex\nlean grammars/lean\njulia grammars/julia\njava grammars/java\nledger grammars/ledger\nbeancount grammars/beancount\nocaml grammars/ocaml/ocaml\nocaml-interface grammars/ocaml-interface/interface\nlua grammars/lua\nsvelte grammars/svelte\nvue grammars/vue\nyaml grammars/yaml\nhaskell grammars/haskell\nzig grammars/zig\ntsq grammars/tsq\ncmake grammars/cmake\nmake grammars/make\nglsl grammars/glsl\nperl grammars/perl\ncomment grammars/comment\nwgsl grammars/wgsl\nllvm grammars/llvm\nllvm-mir grammars/llvm-mir\ntablegen grammars/tablegen\nmarkdown grammars/markdown/tree-sitter-markdown\nmarkdown_inline grammars/markdown_inline/tree-sitter-markdown-inline\ndart grammars/dart\nscala grammars/scala\ndockerfile grammars/dockerfile\ngit-commit grammars/git-commit\ndiff grammars/diff\ngit-rebase grammars/git-rebase\nregex grammars/regex\ngit-config grammars/git-config\ngitattributes grammars/gitattributes\ngitignore grammars/gitignore\ngraphql grammars/graphql\nelm grammars/elm\niex grammars/iex\nrescript grammars/rescript\nerlang grammars/erlang\nkotlin grammars/kotlin\nhcl grammars/hcl\norg grammars/org\nsolidity grammars/solidity\ngleam grammars/gleam\nrobot grammars/robot\nr grammars/r\nswift grammars/swift\nembedded-template grammars/embedded-template\neex grammars/eex\nheex grammars/heex\nsql grammars/sql\ngdscript grammars/gdscript\ngodot-resource grammars/godot-resource\nnu grammars/nu\nvala grammars/vala\nhare grammars/hare\ndevicetree grammars/devicetree\ncpon grammars/cpon\nodin grammars/odin\nmeson grammars/meson\nsshclientconfig grammars/sshclientconfig\nscheme grammars/scheme\nv grammars/v/tree_sitter_v\nverilog grammars/verilog\nedoc grammars/edoc\njsdoc grammars/jsdoc\nopenscad grammars/openscad\nprisma grammars/prisma\nclojure grammars/clojure\nelvish grammars/elvish\nfortran grammars/fortran\nungrammar grammars/ungrammar\ndot grammars/dot\ncue grammars/cue\nslint grammars/slint\ntask grammars/task\nxit grammars/xit\nesdl grammars/esdl\npascal grammars/pascal\nsml grammars/sml\njsonnet grammars/jsonnet\nastro grammars/astro\nbass grammars/bass\nwat grammars/wat/wat\nwast grammars/wast/wast\nd grammars/d\nvhs grammars/vhs\nkdl grammars/kdl\nxml grammars/xml\ndtd grammars/dtd\nwit grammars/wit\nini grammars/ini\nbicep grammars/bicep\nqmljs grammars/qmljs\nmermaid grammars/mermaid\nmatlab grammars/matlab\nponylang grammars/ponylang\ndhall grammars/dhall\npem grammars/pem\npasswd grammars/passwd\nhosts grammars/hosts\nuxntal grammars/uxntal\nyuck grammars/yuck\nprql grammars/prql\npo grammars/po\nnasm grammars/nasm\nrst grammars/rst\ncapnp grammars/capnp\nsmithy grammars/smithy\nvhdl grammars/vhdl\nrego grammars/rego\nnim grammars/nim\nhurl grammars/hurl\nmarkdoc grammars/markdoc\nopencl grammars/opencl\njust grammars/just\nblueprint grammars/blueprint\nforth grammars/forth\nt32 grammars/t32\n"
     }
 ]

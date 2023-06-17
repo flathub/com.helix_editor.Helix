@@ -6,17 +6,14 @@ import json
 import requests
 import hashlib
 
-def create_guthub_source(name, url, commit):
-    archive_url = f'{url}/archive/{commit}.tar.gz'
-
-    print(f'downloading {archive_url}...')
+def create_archive_source(archive_url, name):
     archive = requests.get(archive_url)
-    sha256sum = hashlib.sha256(archive.content)
+    sha256sum = hashlib.sha256(archive.content).hexdigest()
 
     return {
         'type': 'archive',
         'url': archive_url,
-        'sha256': sha256sum.hexdigest(),
+        'sha256': sha256sum,
         'dest': f'grammars/{name}'
     }
 
@@ -38,8 +35,27 @@ for grammar in toml['grammar']:
         paths += f'{name} grammars/{name}\n'
 
     if url.startswith('https://github.com'):
-        sources.append(create_guthub_source(name, url, commit))
+        archive_url = f'{url}/archive/{commit}.tar.gz'
+        print(f'[GITHUB]: {archive_url}')
+        sources.append(create_archive_source(archive_url, name))
+        
+    elif url.startswith('https://gitlab.'):
+        archive_url = f'{url}/-/archive/{commit}/archive.tar.gz'
+        print(f'[GITLAB]: {archive_url}')
+        sources.append(create_archive_source(archive_url, name))
+        
+    elif url.startswith('https://git.sr.ht'):
+        archive_url = f'{url}/archive/{commit}.tar.gz'
+        print(f'[SOURCEHUT]: {archive_url}')
+        sources.append(create_archive_source(archive_url, name))
+
+    elif url.startswith('https://codeberg.org'):
+        archive_url = f'{url}/archive/{commit}.tar.gz'
+        print(f'[CODEBERG]: {archive_url}')
+        sources.append(create_archive_source(archive_url, name))
+        
     else:
+        print(f'[GIT]: {url} @ {commit}')
         sources.append({
             'type': 'git',
             'url': url,
