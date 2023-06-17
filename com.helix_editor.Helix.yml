@@ -71,12 +71,12 @@ modules:
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - HELIX_DISABLE_AUTO_GRAMMAR_BUILD=1 cargo --offline build --profile=opt
-      - install -Dm755 ./target/opt/hx -t /app/share/helix
+      - install -Dm755 ./target/opt/hx -t /app/lib/helix
 
-      - mkdir -p /app/share/helix/runtime
-      - cp -r ./runtime/themes /app/share/helix/runtime/themes
-      - cp -r ./runtime/queries /app/share/helix/runtime/queries
-      - cp ./runtime/tutor /app/share/helix/runtime/tutor
+      - mkdir -p /app/lib/helix/runtime
+      - cp -r ./runtime/themes /app/lib/helix/runtime/themes
+      - cp -r ./runtime/queries /app/lib/helix/runtime/queries
+      - cp ./runtime/tutor /app/lib/helix/runtime/tutor
 
       - install -Dm644 ./contrib/Helix.desktop -t /app/share/applications
       - install -Dm644 ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
@@ -116,7 +116,7 @@ modules:
           gcc $flags -c "$path/src/parser.c"
 
           g++ $flags -o "$name.so" -shared ./*.o
-          install -Dm755 "$name.so" -t /app/share/helix/runtime/grammars
+          install -Dm755 "$name.so" -t /app/lib/helix/runtime/grammars
 
           rm ./*.o
         done
@@ -129,7 +129,7 @@ modules:
       - type: file
         path: helix_first_run.txt
     config-opts:
-      - -Deditor_binary=/app/share/helix/hx
+      - -Deditor_binary=/app/lib/helix/hx
       - -Dprogram_name=hx-wrapper
       - -Deditor_title=Helix
       - -Dflagfile_prefix=flatpak-helix
