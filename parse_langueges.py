@@ -48,6 +48,11 @@ for grammar in toml['grammar']:
         archive_url = f'{url}/archive/{commit}.tar.gz'
         print(f'[SOURCEHUT]: {archive_url}')
         sources.append(create_archive_source(archive_url, name))
+
+    elif url.startswith('https://codeberg.org'):
+        archive_url = f'{url}/archive/{commit}.tar.gz'
+        print(f'[CODEBERG]: {archive_url}')
+        sources.append(create_archive_source(archive_url, name))
         
     else:
         print(f'[GIT]: {url} @ {commit}')
