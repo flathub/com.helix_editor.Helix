@@ -19,18 +19,26 @@ flatpak-spawn --host <COMMAND>
 ## Adding Language Servers Installed on the Host
 
 If you want to use a language server installed on your host system, you
-will need to add an entry to your `languages.toml` file. For example:
+will need to edit `languages.toml` file. For example:
 
 ```toml
 # ~/.var/app/com.helix_editor.Helix/config/helix/languages.toml
 
+[language-server.rust-analyzer-host]
+command = "flatpak-spawn"
+args = ["--host", "rust-analyzer"]
+
 [[language]]
 name = "rust"
-language-server = { command = "flatpak-spawn", args = ["--host", "rust-analyzer"] }
+language-servers = [
+  { name = "rust-analyzer-host" }
+]
 ```
 
-This will allow you to use rust-analyzer installed on your host system
-from within the Flatpak container.
+This will allow you to use rust-analyzer installed on your host
+system from within the Flatpak container. For full documentation on
+how to configure language servers, see
+https://docs.helix-editor.com/languages.html
 
 ## Installing Flatpak SDK Extensions
 
