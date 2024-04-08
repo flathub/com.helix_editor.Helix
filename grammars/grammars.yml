@@ -1,0 +1,6 @@
+name: tree-sitter-grammars
+buildsystem: meson
+sources:
+  - type: file
+    path: meson.build
+  - grammar-sources.json
