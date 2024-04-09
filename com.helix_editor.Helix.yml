@@ -6,7 +6,7 @@ sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
 
-command: hx-wrapper
+command: hx
 
 rename-desktop-file: Helix.desktop
 rename-icon: helix
@@ -81,8 +81,6 @@ modules:
       - install -Dm644 ./contrib/Helix.desktop -t /app/share/applications
       - install -Dm644 ./contrib/helix.png -t /app/share/icons/hicolor/256x256/apps
       - install -Dm644 ./contrib/Helix.appdata.xml -t /app/share/metainfo
-
-      - desktop-file-edit --set-key=Exec --set-value=hx-wrapper /app/share/applications/Helix.desktop
     sources:
       - type: archive
         url: https://github.com/helix-editor/helix/archive/refs/tags/24.03.tar.gz
@@ -108,7 +106,7 @@ modules:
         path: HELIX_FIRST_RUN.md
     config-opts:
       - -Deditor_binary=/app/lib/helix/hx
-      - -Dprogram_name=hx-wrapper
+      - -Dprogram_name=hx
       - -Deditor_title=Helix
       - -Dflagfile_prefix=flatpak-helix
       - -Dfirst_run_template=./HELIX_FIRST_RUN.md
