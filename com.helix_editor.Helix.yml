@@ -101,8 +101,9 @@ modules:
   - name: wrapper
     buildsystem: meson
     sources:
-      - type: dir
-        path: wrapper
+      - type: archive
+        url: https://github.com/flathub-infra/ide-flatpak-wrapper/archive/e42aba9acceceb234216e60bb690705992517907.tar.gz
+        sha256: f97a0187e1de51ec72fb0b802b3a10930ca68c822d0a02d02fa57c6d2815f39e
       - type: file
         path: HELIX_FIRST_RUN.md
     config-opts:
