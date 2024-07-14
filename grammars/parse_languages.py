@@ -21,15 +21,12 @@ def create_archive_source(archive_url, name):
     }
 
 def main():
-    if len(sys.argv) < 1:
-        print('Provide path or url of `languages.toml` as a command line argument')
+    if len(sys.argv) < 2:
+        print('Provide path to `languages.toml` as a command line argument')
         exit(1)
 
-    if sys.argv[1].startswith('https://'):
-        toml = tomllib.loads(requests.get(sys.argv[1]).text)
-    else:
-        with open(sys.argv[1], 'rb') as f:
-            toml = tomllib.load(f)
+    with open(sys.argv[1], 'rb') as f:
+        toml = tomllib.load(f)
 
     sources = []
     paths = ''
