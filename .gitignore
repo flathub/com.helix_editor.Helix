@@ -1,7 +1,3 @@
-Cargo.lock
-languages.toml
-build.sh
 .flatpak-builder
-*.tar.gz
 flatpak-cargo-generator.py
 helix
