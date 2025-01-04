@@ -98,8 +98,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://github.com/flathub-infra/ide-flatpak-wrapper/archive/e42aba9acceceb234216e60bb690705992517907.tar.gz
-        sha256: f97a0187e1de51ec72fb0b802b3a10930ca68c822d0a02d02fa57c6d2815f39e
+        url: https://github.com/blt-r/ide-flatpak-wrapper/archive/65ecd88c791ddc2ef2df6158a3d69c6f17cc3575.tar.gz
+        sha256: e11c6f8033a23fe4c19e95115de75e0d28787dd1e5162880e24ed7713086b5ec
       - type: file
         path: HELIX_FIRST_RUN.md
     config-opts:
