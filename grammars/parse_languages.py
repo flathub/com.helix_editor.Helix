@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Takes path/url of languages.toml file and generates ./grammar/grammar-sources.json from it
+# Takes path/url of languages.toml file and generates grammars/grammar-sources.json from it
 
 # example: ./grammars/parse_languages.py https://github.com/helix-editor/helix/raw/24.03/languages.toml
 
