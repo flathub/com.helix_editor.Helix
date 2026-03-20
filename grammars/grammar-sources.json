@@ -127,8 +127,8 @@
     },
     {
         "type": "archive",
-        "url": "https://github.com/dannylongeuay/tree-sitter-go-template/archive/395a33e08e69f4155156f0b90138a6c86764c979.tar.gz",
-        "sha256": "39394ff1d78c8bb89a1933fd9ab70da08a091a5389277d32c2de04a27c016e4d",
+        "url": "https://github.com/ngalaiko/tree-sitter-go-template/archive/ca26229bafcd3f37698a2496c2a5efa2f07e86bc.tar.gz",
+        "sha256": "e9ae9124034070577c812d737c8ccb9c185c289ef9664239c1f60dab9bf76728",
         "dest": "grammars/gotmpl"
     },
     {
@@ -1406,7 +1406,7 @@
     {
         "type": "archive",
         "url": "https://github.com/rhizoome/tree-sitter-ink/archive/8486e9b1627b0bc6b2deb9ee8102277a7c1281ac.tar.gz",
-        "sha256": "accf5dbc3a8ca7c46e543ec48376fdcdbc1e443fd31dd70a202f76cd6cc3b95f",
+        "sha256": "714742c9be470477dc2aa8ec997365b0ae612e5daffd67bd0a99d39f6de17d6a",
         "dest": "grammars/ink"
     },
     {
